@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        <% include partials/styles.ejs %>
+        <h1>Pixabay Search Results</h1>
+        
+        <form action="/results">
+            Keyword: <input type="text" name="keyword"><br>
+            Orientation: <select name="orientation">
+                <option value="">Select</option>
+                <option value="vertical">Vertical</option>
+                <option value="horizontal">Horizontal</option>
+                </select>
+            <button> Search! </button>
+        </form> <br>
+        
+        <hr/>
+        
+    <div class="row">
+      <div class="column">
+        Likes: <%=likes1%><br>
+        <img src='<%=image1%>' width='250'>
+      </div>
+      <div class="column">
+        Likes: <%=likes2%><br>
+        <img src='<%=image2%>' width='250'>
+      </div>
+      <div class="column">
+        Likes: <%=likes3%><br>
+        <img src='<%=image3%>' width='250'>
+      </div>
+      <div class="column">
+        Likes: <%=likes4%><br>
+        <img src='<%=image4%>' width='250'>
+      </div>
+    </div>
+        <hr/>
+    </body>
+</html>
